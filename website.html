@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <title>Website</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            *{
+                margin: auto;
+            }
+            body{
+                background-image: url(https://wallpapers.com/images/hd/best-gaming-background-aea1fp9pow4r1l4r.jpg);
+                background-size: cover; 
+            }
+            .topnav{
+                background-color: rgba(255, 255, 255, 0.3);
+                width: 100%;
+                height: 60px;
+                position: fixed;
+                top: 0;
+                box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(14px);
+                z-index: 2;    
+            }
+            .navleft{
+                /* background-color: black; */
+                width: 30%;
+                position: absolute;
+                left: 150px;
+                top: 0;
+                padding: 3px;
+            }
+            .navright{
+                /* background-color: black  ; */
+                display: flex;
+                width: 50%;
+                position: absolute;
+                right: 50px;
+            }
+            .Home, .Career, .Gallery{
+                font-family: sans-serif;
+                font-weight: bold;
+                color: white;
+                width: 18%;
+                height: 20px;
+                padding: 20px;
+                text-align: center;
+                transition: 0.3s;
+            }
+            .AboutUs, .ContactUs{
+                font-family: sans-serif;
+                font-weight: bold;
+                color: white;
+                width: 24%;
+                height: 20px;
+                padding: 20px;
+                text-align: center;
+                transition: 0.3s;
+            }
+            .form{
+                background-color: rgba(255, 255, 255, 0.1);
+                margin-top: 200px;
+                margin-left: 780px;
+                padding: 18px;
+                width: 300px;
+                height: 400px;
+                border: solid;
+                border-width: 1.5px;
+                border-color: rgb(153, 153, 153);
+                border-radius: 5px;
+                box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(9px);
+            }
+            input, select{
+                width: 100%;
+                margin: 10px 0 15px;
+                padding: 7px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            label, span, a{
+                color: white;
+                font-family: sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            input[type=submit]{
+                background-color: #e20a0a;
+                color: white;
+                font-family: sans-serif;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-bottom: 20px;
+                padding: 9px;
+            }
+            .Home:hover, .Career:hover, .Gallery:hover, .AboutUs:hover, .ContactUs:hover{
+                background-color: #e20a0a;
+                color: white;
+                cursor: pointer;
+            }
+            input[type=submit]:hover{
+                background-color: rgb(255, 0, 0);
+            }
+            input[type=text]:hover, [type=password]:hover, [type=email]:hover{
+                background-color: rgb(233, 233, 233);
+            }
+            #search{
+                border-radius: 20px;
+                border: solid;
+                border-color: rgb(204, 204, 204);
+                border-width: 1.5px;
+            }
+            .left{
+                background-color: rgba(255, 255, 255, 0.3);
+                width: 15%;
+                height: 1080px;
+                position: absolute;
+                left: 0;
+                top: 60px;
+                box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(12px);
+                /* padding: 10px; */
+            }
+            .leftlist{
+                padding: 0;
+                margin: 0;
+            }
+            .leftlist li{
+                display: block;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bold;
+                padding: 10px 30px;
+                margin-top: 15px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .leftlist li:hover{
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 255, 255);
+                box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
+            }
+            .actiongames, .adventuregames, .horrorgames, .arcadegames, .puzzlegames, .sportsgames{
+                padding: 0;
+                margin: 0;
+                /* background-color: rgb(255, 255, 255); */
+                position: absolute;
+                border: solid;
+                border-color: rgb(175, 175, 175);
+                border-width: 1px;
+                border-radius: 3px;
+                left: 213px;
+                top: 0px;
+                display: none;
+                box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
+            }
+            .adventuregames{
+                top: 53px;
+            }
+            .horrorgames{
+                top: 107px;
+            }
+            .arcadegames{
+                top: 160px;
+            }
+            .puzzlegames{
+                top: 213px;
+            }
+            .sportsgames{
+                top: 268px;
+            }
+            .action:hover .actiongames, .adventures:hover .adventuregames, .horror:hover .horrorgames, .arcade:hover .arcadegames, .puzzle:hover .puzzlegames, .sports:hover .sportsgames{
+                padding: 0;
+                margin: 0;
+                width: 180px;
+                display: block;
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, 0.3);
+                transition: 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="left">
+            <ul class="leftlist" type="none">
+                <li class="action"><i class='bx bx-cross'></i> Action
+                    <ul class="actiongames">
+                        <li><a href="https://store.steampowered.com/app/1938090/Call_of_Duty/" target="_blank">Call of duty</a></li>
+                        <li><a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">Counter Strike</a></li>
+                        <li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">Elden Ring</a></li>
+                        <li><a href="https://store.steampowered.com/app/1593500/God_of_War/" target="_blank">God of war</a></li>
+                    </ul>
+                </li>
+                <li class="adventures"><i class='bx bx-run'></i> Adventures
+                    <ul class="adventuregames">
+                        <li>Uncharted</li>
+                        <li>Tomb Raider</li>
+                        <li>Star Wars</li>
+                        <li>Genshin Impact</li>
+                    </ul>
+                </li>
+                <li class="horror"><i class='bx bx-ghost'></i> Horror
+                    <ul class="horrorgames">
+                        <li>Resident Evil</li>
+                        <li>Evil Within</li>
+                        <li>Dead By Daylight</li>
+                        <li>Days Gone</li>
+                    </ul></li>
+                <li class="arcade"><i class='bx bx-dice-5' ></i> Arcade
+                    <ul class="arcadegames">
+                        <li>Tekken</li>
+                        <li>Street Fighter</li>
+                        <li>Metal Slug</li>
+                        <li>Sonic</li>
+                    </ul></li>
+                <li class="puzzle"><i class='bx bx-extension'></i> Puzzle
+                    <ul class="puzzlegames">
+                        <li>The Witness</li>
+                        <li>Portal</li>
+                        <li>It Takes Two</li>
+                        <li>Firewatch</li>
+                    </ul></li>
+                <li class="sports"><i class='bx bx-football'></i> Sports
+                    <ul class="sportsgames">
+                        <li>FIFA 23</li>
+                        <li>NBA 2k23</li>
+                        <li>Forza Horizon 5</li>
+                        <li>Tony Hawk Skater</li>
+                    </ul></li>
+            </ul>
+        </div>
+        <div class="topnav">
+            <ul type="none" class="navright">
+                <li class="Home">
+                    <i class='bx bxs-home-alt-2 bx-tada-hover'></i> Home      
+                </li>
+                <li class="Career"><i class='bx bxs-briefcase bx-tada-hover'></i> Career</li>
+                <li class="Gallery"><i class='bx bxs-photo-album bx-tada-hover'></i> Gallery</li>
+                <li class="AboutUs"><i class='bx bxs-building bx-tada-hover'></i> About Us</li>
+                <li class="ContactUs"><i class='bx bxs-contact bx-tada-hover' ></i> Contact Us</li>
+            </ul>
+        <div class="navleft">
+            <input type="search" id="search" name="search" placeholder="Search">
+        </div>
+        </div>
+        <div class="form">
+            <form action="" method="post" target="_blank">
+                <label for="Username"><i class='bx bxs-user'></i> Username</label>
+                <input type="text" id="Username" name="Username" placeholder="Insert username">
+                <label for="Password"><i class='bx bxs-lock'></i> Password</label>
+                <input type="password" id="Password" name="Password" placeholder="Insert password">
+                <label for="Email"><i class='bx bxl-gmail' ></i> Email</label>
+                <input type="email" id="Email" name="Email" placeholder="Insert email">
+                <label for="Country"><i class='bx bx-world' ></i> Country</label>
+                <select name="" id="">
+                    <option value="">Nepal</option>
+                    <option value="">USA</option>
+                    <option value="">UK</option>
+                    <option value="">Wakanda</option>
+                </select>
+                <input type="submit" value="Register">
+                <span>Not registered yet? </span><a href="" target="_blank">Login here</a>
+            </form>
+        </div>
+    </body>
+</html>

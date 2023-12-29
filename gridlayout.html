@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 25vw 38vw 37vw;
+            grid-template-rows: 10vh 40vh 40vh 10vh;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: aqua;
+        }
+        .left{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: blue;
+        }
+        .righttop{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: brown;
+        }
+        .rightbottomleft{
+            background-color: blueviolet;
+        }
+        .rightbottomright{
+            background-color: bisque;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgb(217, 255, 0);
+        }
+        .navtop{
+            justify-content: space-around;
+            padding-top: 22px;
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="navtop">
+                <li>Home</li>
+                <li>Gallery</li>
+                <li>Career</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div class="left">left</div>
+        <div class="righttop">righttop</div>
+        <div class="rightbottomleft">bottomleft</div>
+        <div class="rightbottomright">bottomright</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

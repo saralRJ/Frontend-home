@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title>flex layout</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: blueviolet;
+            width: 100vw;
+            height: 10vh;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .left {
+            background-color: blue;
+            width: 25vw;
+            height: 80vh;
+        }
+
+        .righttop {
+            display: flex;
+        }
+
+        .righttopleft {
+            background-color: brown;
+            width: 37vw;
+            height: 20vh;
+        }
+
+        .righttopright {
+            background-color: aqua;
+            width: 38vw;
+            height: 20vh;
+        }
+        .footer {
+            background-color: rgb(122, 122, 122);
+            width: 100vw;
+            height: 10vh;
+        }
+
+        .righttopbottom {
+            background-color: bisque;
+            width: 75vw;
+            height: 20vh;
+        }
+
+        .rightbottomtop {
+            background-color: rgb(38, 221, 14);
+            width: 75vw;
+            height: 20vh;
+        }
+
+        .rightbottombottom {
+            display: flex;
+        }
+
+        .rightbottomleft {
+            background-color: rgb(251, 255, 0);
+            width: 38vw;
+            height: 20vh;
+        }
+
+        .rightbottomright {
+            background-color: rgb(153, 0, 255);
+            width: 37vw;
+            height: 20vh;
+        }
+
+        .navtop {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 24px;
+        }
+
+        .navtop li:hover {
+            color: blue;
+            cursor: pointer;
+        }
+        .navleft{
+            padding: 0;
+            margin: 0;
+        }
+        .navleft li{
+            display: block;
+            list-style: none;
+            padding: 20;
+            /* margin: 10; */
+            color: white;
+            transition: 0.4s;
+        }
+        .navleft li:hover{
+            background-color: red;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="navtop">
+            <li>Home</li>
+            <li>Career</li>
+            <li>Gallery</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="left">
+            <ul class="navleft">
+                <li>Home</li>
+                <li>Career</li>
+                <li>Gallery</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="righttop">
+                <div class="righttopleft">
+                    <audio src="[FREE] Indie x Bedroom Pop Type Beat --.mp3" controls></audio>
+                </div>
+                <div class="righttopright"></div>
+            </div>
+            <div class="righttopbottom"></div>
+            <div class="rightbottom">
+                <div class="rightbottomtop"></div>
+                <div class="rightbottombottom">
+                    <div class="rightbottomleft"></div>
+                    <div class="rightbottomright"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>newform</title>
+    <style>
+        * {
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-family: sans-serif;
+        }
+        form {
+            font-family: sans-serif;
+            margin-top: 20px;
+            width: 50%;
+            border: 1px solid rgb(201, 201, 201);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.3);
+        }
+        input::placeholder{
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        label {
+            width: 15%;
+            display: inline-block;
+        }
+
+        input[type=text], [type=password], [type=email], [type=date], [type=search], 
+        select,
+        textarea {
+            width: 84%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .gender, .skill{
+            width: 84%;
+            margin: 20px 0;
+            display: inline-flex;
+            /* background-color: aqua;   */
+        }
+        .button{
+            text-align: center;
+            /* padding: 10px; */
+            margin: 15px 0;
+        }
+        input[type=submit]{
+            width: 30%;
+            padding: 15px;
+            background-color: rgb(40, 115, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        input[type=radio], [type=checkbox]{
+            margin-right: -20px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Register here</h1>
+    <form action="" method="post" target="_blank">
+        <label for="Username">Username</label>
+        <input type="text" id="Username" name="Username" placeholder="Insert username">
+        <label for="Password">Password</label>
+        <input type="password" id="Username" name="Username" placeholder="Insert password">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Insert email">
+        <label for="DOB">DOB</label>
+        <input type="date" id="DOB" name="DOB">
+        <label for="Search">Search</label>
+        <input type="search" id="Search" placeholder="Search">
+        <label for="Country">Country</label>
+        <select name="" id="Country">
+            <option value="">Nepal</option>
+            <option value="">USA</option>
+            <option value="">UK</option>
+            <option value="">Wakanda</option>
+        </select>
+        <label for="">Gender</label>
+        <div class="gender">
+            <input type="radio" name="Male" id="">
+            <label for="">Male</label>
+            <input type="radio" name="Male" id="">
+            <label for="">Female</label>
+            <input type="radio" name="Male" id="">
+            <label for="">Others</label>
+        </div>
+        <label for="">Skills</label>
+        <div class="skill">
+            <input type="checkbox">
+            <label for="">HTML</label>
+            <input type="checkbox">
+            <label for="">CSS</label>
+            <input type="checkbox">
+            <label for="">Javascript</label>
+            <input type="checkbox">
+            <label for="">React</label>
+        </div>
+        <label for="">Description</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="button">
+        <input type="submit" value="Register">
+        </div>
+        <p>Already have an account? <a href="" target="_blank">Login here</a></p>
+    </form>
+</body>
+
+</html>
