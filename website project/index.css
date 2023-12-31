@@ -5,6 +5,7 @@
 
 .header {
     position: fixed;
+    top: 0;
     height: 10vh;
     width: 100%;
     display: flex;
@@ -206,6 +207,7 @@ i {}
     font-family: poppins;
     margin: auto;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 /* for portfolio section */
@@ -316,4 +318,41 @@ i {}
     /* background-color: aqua; */
     font-family: poppins;
     font-size: 18px;
+}
+.contact{
+    background-color: rgb(240, 240, 240);
+    font-family: poppins;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.phone{
+    /* background-color: antiquewhite; */
+    width: 23%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact i{
+    font-size: 30px;
+}
+.contact span{
+    padding-top: 8px;
+}
+.email{
+    /* background-color: antiquewhite; */
+    width: 28%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.address{
+    /* background-color: antiquewhite; */
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
 }
